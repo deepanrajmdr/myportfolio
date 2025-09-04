@@ -87,6 +87,11 @@ h4, .h4 {
     color: var(--text-secondary);
 }
 
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 @media screen and (max-width: 768px) {
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         padding-left: 20px;
@@ -161,6 +166,7 @@ h4, .h4 {
 .hero p {
     font-size: 1.65rem;
     font-weight: 400;
+    text-align: justify;
 }
 
 .hero-social-icons a {
@@ -192,13 +198,14 @@ h4, .h4 {
 
 .hero img {
     width: 80%;
-    padding: 10px;
+    /* padding: 10px; */
+    border-radius: 6px;
 }
     
 
 @media screen and (min-width: 767px) {
     .hero img {
-        padding: 16px;
+        /* padding: 16px; */
 }    
 }
 
