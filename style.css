@@ -1,0 +1,330 @@
+:root {
+    --bg-color: #ffffff;
+    --text-primary: #507256;
+    --text-secondary: #000;
+    --text-secondary-subtle: #212529bf;
+    --color-primary: #88AB8E;
+    --color-secondary: #E7D9C1;
+    --color-footer: #393A3A;
+    --color-white: #fff;
+    --color-black: #000;
+    --bg-icon: #f1f8f2;
+    --bg-icon-2: #fff1;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+*, ul, ol, p, h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Reddit Sans";
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4{
+    color: var(--text-primary);
+    font-weight: 700;    
+}
+
+h1, .h1 {
+    font-size: 4.2rem;
+}
+
+h2, .h2 {
+    font-size: 3.4rem;
+}
+
+h3, .h3 {
+    font-size: 2.4rem;
+}
+
+h4, .h4 {
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    h1, .h1 {
+        font-size: 6rem;
+    }
+
+    h2, .h2 {
+        font-size: 4rem;
+    }
+
+    h3, .h3 {
+        font-size: 3.2rem;
+    }
+
+    h4, .h4 {
+        font-size: 2rem;
+    }
+
+}
+
+.text-secondary-color {
+    color: var(--text-secondary-subtle);
+}
+
+.heading-secondary-color {
+    color: var(--text-secondary);
+}
+
+@media screen and (max-width: 768px) {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* Navbar */
+
+.nav-bar {
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-bar.scrolled {
+    box-shadow: 0 4px 5px 0 #0001;;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 1.5rem;
+}
+
+.navbar-toggler {
+    border: 1px solid var(--color-primary);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.navbar .container-lg {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand svg {
+    fill: var(--color-primary);
+}
+
+.nav-link {
+    color: var(--text-secondary);
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding: 4px 10px;
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--color-primary);
+    font-weight: 600; 
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 8px 8px;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+}
+
+/* Hero section */
+
+.hero p {
+    font-size: 1.65rem;
+    font-weight: 400;
+}
+
+.hero-social-icons a {
+    color: var(--color-primary);
+    background-color: var(--bg-icon);
+    font-size: 1.8rem;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease;
+}
+
+.hero-social-icons a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 800px) {
+    .hero-social-icons a {
+        font-size: 2rem;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.hero img {
+    width: 80%;
+    padding: 10px;
+}
+    
+
+@media screen and (min-width: 767px) {
+    .hero img {
+        padding: 16px;
+}    
+}
+
+
+/* Work section */
+
+.card {
+    border: 0;
+    border-radius: 0;
+    background-color: var(--bg-color);
+    margin-bottom: 24px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 2.4rem 0;    
+}
+
+.card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.card img {
+    transition: transform 0.3s ease-in;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-text p {
+    font-size: 1.4rem;
+    color: var(--text-secondary-subtle);
+    
+}
+
+/* Experience */
+
+ul.ms-4 {
+    margin-left: 1.6rem !important;
+}
+
+.experience ul li {
+    margin-bottom: 8px;
+}
+
+/* Work-cases */
+
+.work-cases img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.work-cases-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.work-cases h1, .work-cases h2, .work-cases h3, .work-cases h4 {
+    margin-bottom: 10px;
+}
+
+.work-cases p.num-style {
+    font-weight: 900;
+    font-size: 5rem;
+    opacity: 0.3;
+    color: var(--text-primary);
+    justify-content: center;
+}
+
+.work-cases-content ul {
+   margin-left: 16px;
+}
+
+
+
+/* Footer */
+
+.footer-section {
+    background-color: var(--color-footer);
+    color: var(--color-white);
+}
+
+.footer-icons a {
+    color: var(--color-white);
+    background-color: var(--bg-icon-2);
+    font-size: 1.8rem;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease;
+}
+
+.footer-icons a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 800px) {
+    .footer-icons a {
+        font-size: 2rem;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-icon-set {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+}
